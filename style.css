@@ -16,6 +16,7 @@ body {
     background-color: var(--raisin-black);
     color: var(--white);
     font-family:var(--montserrat);
+    font-size: large;
 }
 
 h1,
@@ -24,6 +25,19 @@ nav {
     font-family: var(--open-sans);
 }
 
+a{
+    color: var(--sandy-brown);
+    text-decoration: none;
+    background: 
+      linear-gradient(90deg,#1095c1 50%,#000 0) 
+      var(--_p,100%)/200% no-repeat;
+    -webkit-background-clip: text;
+            background-clip: text;
+    transition: .5s;
+  }
+a:hover {
+    --_p: 0%;
+}
 
 .container {  
     display: grid;
@@ -65,3 +79,10 @@ nav {
     justify-content: space-around;
     align-items: center;
 }
+
+.warning-red {
+    color: var(--warning-red);
+}
+
+
+  
