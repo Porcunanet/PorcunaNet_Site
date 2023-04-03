@@ -110,7 +110,7 @@ a:hover {
    
 }
 
-.projects-container div {
+.projects-container img {
     width: 250px;
     height: 250px;
     background-color: var(--turquoise);
@@ -118,6 +118,7 @@ a:hover {
     justify-content: center;
     align-content: center;
 }
+
 
 
 .footer { grid-area: footer; }
