@@ -7,8 +7,21 @@
     --bg-powder :#FDFFFC;
     --heading-xanthous : #F7B32B;
     --text-black: #0C120C;
+
+    --alegreya-font: 'Alegreya', serif;
+    --oswald-font: 'Oswald', sans-serif;
 }
 
+.text-align-center {
+  text-align: center;
+}
+
+h1, h2, h3 {
+  font-family: var(--oswald-font);
+}
+p,li, small {
+  font-family: var(--alegreya-font);
+}
 body {
     background-color: var(--bg-powder);
     color: var(--text-black);
@@ -16,35 +29,56 @@ body {
 
 .navigation {
   display: flex;
-  margin: 3rem;
+  margin: 1rem 0 8rem 0;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navigation ul {
   display: flex;
+  margin: 0;
 }
 
 .navigation ul li {
   list-style-type: none;
-}
-
-.centered-space-around {
-  align-items: center;
-  justify-content: space-around;
+  margin-left: 2rem;
 }
 
 .container {
   max-width: 1300px;
   margin: 0 auto;
-  padding: 2rem;
 }
 
-.projects h2 {
-  text-align: center;
+.main {
+  margin: 2rem 0;
+}
+
+.resume-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.main h1, p, ul{
+  margin-bottom: 1.5rem;
+  max-width: 120ch;
+}
+
+.main h3 {
+  margin: 1.5rem 0 0.5rem 0;
+}
+
+.main li {
+  margin-top: .8rem;
 }
 
 .projects-container {
   display:grid;
 }
+
+.projects h2 {
+  margin: 5rem 0;
+}
+
 
 /* 
   ##Device = Desktops
@@ -53,6 +87,18 @@ body {
 
 @media (min-width: 1281px) {
   /* CSS */
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+  
   .projects-container {
     justify-items: center;
     grid-template-columns: repeat(4, 1fr);
@@ -72,6 +118,18 @@ body {
 
 @media (min-width: 1025px) and (max-width: 1280px) {
   /* CSS */
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
   .projects-container {
     justify-items: center;
     grid-template-columns: repeat(4, 1fr);
@@ -93,6 +151,17 @@ body {
 
 @media (min-width: 768px) and (max-width: 1024px){
   /* CSS */
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
 
   .projects-container {
     justify-items: center;
@@ -114,6 +183,17 @@ body {
 
 @media (min-width: 481px) and (max-width: 767px) {
   /* CSS */
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
 
   .projects-container {
     justify-items: center;
@@ -132,9 +212,21 @@ body {
   ##Device = Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 320px to 479px
 */
-@media (min-width:320px) and (max-width: 480px) {
+@media (min-width:0px) and (max-width: 480px) {
   
   /* CSS */
+  h1 {
+    font-size:3.5rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
   .projects-container {
     justify-items: center;
   }
