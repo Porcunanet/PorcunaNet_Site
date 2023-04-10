@@ -6,20 +6,44 @@
     --warning-flame : #EC4E20;
     --bg-powder :#FDFFFC;
     --heading-xanthous : #F7B32B;
-    --text-Black: #0C120C;
+    --text-black: #0C120C;
 }
 
 body {
     background-color: var(--bg-powder);
+    color: var(--text-black);
+}
+
+.navigation {
+  display: flex;
+  margin: 3rem;
+}
+
+.navigation ul {
+  display: flex;
+}
+
+.navigation ul li {
+  list-style-type: none;
+}
+
+.centered-space-around {
+  align-items: center;
+  justify-content: space-around;
 }
 
 .container {
-  display: grid;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
-.projects-container img {
-  width: 382px;
-  height: 504px;
+.projects h2 {
+  text-align: center;
+}
+
+.projects-container {
+  display:grid;
 }
 
 /* 
@@ -28,17 +52,17 @@ body {
 */
 
 @media (min-width: 1281px) {
-  
   /* CSS */
-
-  .bg-logo{
-    display: block; 
+  .projects-container {
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: .8rem;
   }
 
-  .sm-logo{
-    display: none;
+  .projects img {
+    width: 300px;
+    height: 300px;
   }
-  
 }
 
 /* 
@@ -47,17 +71,19 @@ body {
 */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-  
   /* CSS */
-
-  .bg-logo{
-    display: block; 
+  .projects-container {
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: .8rem;
   }
 
-  .sm-logo{
-    display: none;
+  .projects img {
+    width: 300px;
+    height: 300px;
   }
-  
+
+
 }
 
 /* 
@@ -65,88 +91,56 @@ body {
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  
+@media (min-width: 768px) and (max-width: 1024px){
   /* CSS */
-  .bg-logo{
-    display: block; 
+
+  .projects-container {
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: .8rem;
   }
 
-  .sm-logo{
-    display: none;
-  }
-  
-}
-
-/* 
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  
-  /* CSS */
-  .bg-logo{
-    display: block; 
+  .projects img {
+    width: 250px;
+    height: 250px;
   }
 
-  .sm-logo{
-    display: none;
-  }
-  
-}
 
 /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
 */
+}
 
 @media (min-width: 481px) and (max-width: 767px) {
-  
   /* CSS */
-  .bg-logo{
-    display: block; 
+
+  .projects-container {
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: .8rem;
   }
 
-  .sm-logo{
-    display: none;
+  .projects img {
+    width: 250px;
+    height: 250px;
   }
-  
+
 }
 
 /* 
   ##Device = Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 320px to 479px
 */
-
-@media (min-width: 0px) and (max-width: 480px) {
+@media (min-width:320px) and (max-width: 480px) {
   
   /* CSS */
-
-  body {
-    background-color: #0C120C;
-  }
-
-  .container {
-    grid-template-columns: 1fr;
-  }
-
-  .bg-logo{
-    display: none; 
-  }
-
-  .sm-logo{
-    display: block;
-  }
-
   .projects-container {
-    display: grid;
-    grid-template-columns: 1fr;
     justify-items: center;
-    grid-row-gap: 1rem;
   }
 
-  .projects-container img {
-    border-radius: .5rem;
+  .projects img {
+    width: 300px;
+    height: 30ß0px;
   }
 }
