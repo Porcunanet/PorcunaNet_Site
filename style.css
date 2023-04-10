@@ -82,6 +82,11 @@ body {
   margin: 1.5rem 0 0.5rem 0;
 }
 
+.main p {
+  font-size:larger;
+  color: var(--hover-azul-blue);
+}
+
 .main li {
   margin-top: .8rem;
 }
@@ -127,6 +132,10 @@ body {
     height: 300px;
   }
 
+  .resume-container li {
+    font-size: 1.8rem;
+  }
+
   .navigation ul li a {
     font-size: 1.8rem;
   }
@@ -160,6 +169,10 @@ body {
   .projects img {
     width: 300px;
     height: 300px;
+  }
+
+  .resume-container li {
+    font-size: 1.8rem;
   }
 
   .navigation ul li a {
@@ -199,6 +212,10 @@ body {
     height: 250px;
   }
 
+  .resume-container li {
+    font-size: 1.5rem;
+  }
+
   .navigation ul li a {
     font-size: 1.8rem;
   }
@@ -233,6 +250,10 @@ body {
   .projects img {
     width: 250px;
     height: 250px;
+  }
+
+  .resume-container li {
+    font-size: 1.5rem;
   }
 
   .navigation ul li a {
@@ -270,7 +291,7 @@ body {
   }
 
   .resume-container li {
-    font-size: 3rem;
+    font-size: 1.5rem;
   }
 
   .navigation ul li a {
