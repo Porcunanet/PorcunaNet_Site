@@ -73,6 +73,7 @@ body {
 .resume-container {
   max-width: 1000px;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .main h1, p, ul{
@@ -91,6 +92,7 @@ body {
 
 .main li {
   margin-top: .8rem;
+  list-style-type: square;
 }
 
 .projects-container {
@@ -273,7 +275,6 @@ body {
   ##Screen = B/w 320px to 479px
 */
 @media (min-width:0px) and (max-width: 480px) {
-  
   /* CSS */
   h1 {
     font-size:3.5rem;
@@ -287,6 +288,7 @@ body {
     font-size: 1.5rem;
   }
 
+  
   .projects-container {
     justify-items: center;
   }
@@ -297,7 +299,7 @@ body {
   }
 
   .resume-container li {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
 
   .navigation ul li a {
